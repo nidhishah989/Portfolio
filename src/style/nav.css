@@ -1,0 +1,76 @@
+@import url('https://fonts.cdnfonts.com/css/brush-effect');
+.navbar{
+    background-color: #1C3144;
+    padding: 0px;
+    /* height: 50px; */
+    /* margin:2px; */
+    /* margin-left:4px;
+    margin-right:10px; */
+    /* border-radius: 15px; */
+    position:fixed;
+    top: 0px;
+    left:0px;
+    right:0px;
+    /* z-index: 100; */
+
+}
+
+.navbar-brand{
+    
+    font-family: 'Brush effect', sans-serif;
+    padding-left:20px;
+    letter-spacing: 4px;
+    color:rgba(224, 101, 53, 0.874);
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* .navbar-brand .initialFL{
+    color:rgba(224, 101, 53, 0.874);
+} */
+.navbar-brand img{
+    width: 100px;
+    height:100%;
+}
+
+.nav-tabs {
+    border: none;
+    border-bottom: none; /* Remove the border */
+    height:100%;
+}
+
+.nav-link{
+    color:rgba(245, 145, 106, 0.971);
+    border: none;
+    font-size: 19px;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: calc(-9 * var(--bs-nav-tabs-border-width));
+    /* font-size: 20px; */
+}
+
+.nav-link:focus, .nav-link:hover {
+    border:none;
+    color: whitesmoke;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    /* background-color: whitesmoke; */
+    border: none;
+    background-image: url('../style/Images/stroke.jpg');
+    background-size: cover; /* Adjust as needed */
+
+}
+
+.navbar .col-sm-12 .symbol-tab{
+ display: flex;
+}
+
+.navbar .col-sm-12 .name-tab{
+    content: none;
+    text-decoration: none;
+   }
+
+
+

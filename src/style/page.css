@@ -1,0 +1,16 @@
+
+#page_section{
+    
+    background-color: whitesmoke;
+    height: 100vh;
+    margin-top: 48px;
+    /* z-index: 50; */
+}
+
+.main_sec
+{
+    background-color: whitesmoke;
+    padding-top: 58px;
+    /* transform: translateY(1px); /* Adjust the value to control how much the div is lifted */
+    /* position:sticky; */ 
+}
