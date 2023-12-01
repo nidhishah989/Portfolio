@@ -1,0 +1,38 @@
+/* ----------------------------NAVBAR --------------------------- */
+/* Navbar main div */
+.headnav{
+    height: 65px;
+    background-color:#f2f9f9 !important;
+    padding: 0;
+}
+
+/* custom navbar */
+.navbar{
+    background-color: #f2f9f9 !important;
+    position: fixed;
+    z-index: 1;
+}
+/* Navbar brand */
+
+.initialFL{
+    color: #d64c31;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* navbar collapse nav */
+.navbar-nav{
+   color: black;
+   font-weight: 600;
+}
+.nav-link:hover{
+    color:#094946;
+}
+.nav-link:focus{
+    color:#d64c31;
+    text-decoration-line: underline;
+}
+
+.nav-item:active{
+    color: #d64c31;
+}
