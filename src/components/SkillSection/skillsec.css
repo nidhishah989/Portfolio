@@ -1,0 +1,34 @@
+/* Skill Section */
+
+#skills{
+    
+    background-color: #b5ecec;
+}
+
+.skillsec{
+    background-color: #f2f9f9;
+}
+
+.custom-button {
+    width: 95px;
+    height: 95px;
+    border: solid #094946 3px;
+    border-radius: 8px;
+    box-shadow: 4px 5px 0px 0px #094946; /* Adjust shadow as needed */
+    /* transition: box-shadow 0.3s ease-in-out; */
+    background-color:#15B5B1;
+    font-size: 14px;
+}
+@media (max-width: 575.98px) {
+    .custom-button {
+        width: 75px;
+        height: 75px;
+        border: solid #094946 3px;
+        border-radius: 8px;
+        box-shadow: 4px 5px 0px 0px #094946; /* Adjust shadow as needed */
+        /* transition: box-shadow 0.3s ease-in-out; */
+        background-color:#ed5d40;
+        font-size: 10px;
+
+    }
+} 
