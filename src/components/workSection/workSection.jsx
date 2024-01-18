@@ -1,17 +1,28 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const WorkSection = () => {
   const username = 'nidhishah989';
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [file, setfile] =useState([])
 
   useEffect(() => {
+    
     const fetchRepos = async () => {
       try {
         const response = await fetch(`https://api.github.com/users/${username}/repos`);
         const data = await response.json();
-        console.log(data.name + data.description)
-        setRepos(data);
+        console.log("DATA: ", data.name + data.description)
+        const sortedRepos = [...data].sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+        setRepos(sortedRepos);
+
+        const response1 = await fetch (`https://api.github.com/repos/${username}/Meeting-Scheduler/contents/file.json`)
+        const data1 = await response1.json();
+        setfile(data1)
+
+
+        
       } catch (error) {
         console.error('Error fetching public repositories:', error);
       } finally {
@@ -30,12 +41,14 @@ const WorkSection = () => {
       ) : (
         <ul>
           {repos.map(repo => (
-            <li key={repo.id}>
-                {repo.description?"":
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                {repo.name} {repo.description}
-              </a>}
-            </li>
+            repo.description &&  <li key={repo.id}>
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+              {repo.name} ---- {repo.created_at}
+            </a>
+            <p>{repo.description}</p> 
+            <p> {file.content}</p>
+          </li>
+           
           ))}
         </ul>
       )}

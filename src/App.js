@@ -5,6 +5,7 @@ import HomeSection from './components/HomeSection/homeSection';
 import AboutSection from './components/AboutSection/aboutSection';
 import SkillsSection from './components/SkillSection/skillsection';
 import WorkSection from './components/workSection/workSection';
+import ProjectList from './components/workSection/worksec';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <AboutSection/>
         <SkillsSection/>
         {/* <WorkSection /> */}
+        <ProjectList></ProjectList>
         
       </div>
     </Router>
