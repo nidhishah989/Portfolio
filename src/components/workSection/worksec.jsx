@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Project from './project';
+import "./projects.css";
 
 const ProjectList = () => {
   const [projects, setProjects] = useState([]);
@@ -74,8 +75,12 @@ const ProjectList = () => {
   },[]);
 
   return (
-    <div className='container'>
-      <h1>My Projects</h1>
+    <div className='container-fluid projectsec'>
+        <div className='row'>
+            <div className='col-12 d-flex justify-content-center'>
+                <h1 className='worktitl pt-4'>My Projects</h1>
+            </div>
+        </div>
       <div className='row'>
         {projects.map((proj, index) => (
            

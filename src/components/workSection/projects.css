@@ -1,0 +1,26 @@
+.projectsec{
+    background-color:rgba(104, 222, 222, 0.6);
+}
+
+.githublink{
+    padding-top:1.2px;
+   
+}
+
+.gitlogo{
+    padding-bottom: 1px;
+}
+
+.worktitl{
+    display: inline-block;
+    border-bottom: 4px solid #094946; /* Adjust the color and thickness of the line */
+    padding-bottom: 10px; 
+    padding-top: 10px;
+    font-weight: 700;
+    /* color:#00807a; */
+    color: #d64c31;
+} 
+
+.projecttitle{
+    background-color: rgb(172, 164, 220);
+}

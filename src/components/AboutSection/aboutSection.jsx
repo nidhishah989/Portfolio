@@ -21,7 +21,7 @@ const AboutSection = () => {
                 I hold a master's degree in Computer Science.
                 Skilled in crafting responsive and dynamic solutions within diverse project portfolios, utilizing a variety of front-end and back-end technologies.
               </div>
-              <div className="pt-3 mb-md-2">
+              <div className="pt-3 mb-md-2 mb-2">
                 Beyond coding, I enjoy cooking and exploring various TV series. Any recommendations?
               </div>
             </div>
