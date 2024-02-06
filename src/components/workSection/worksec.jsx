@@ -42,7 +42,8 @@ const ProjectList = () => {
               description: jsonData.description,
               tools: jsonData.tools,
               githubUrl: repo.html_url,
-              demoUrl: jsonData.demoUrl || null, // Adjust based on your JSON structure
+              prjimg : jsonData.prjimg,
+              demoUrl: jsonData.live || null, // Adjust based on your JSON structure
               };
 
           console.log(projectInfo)
@@ -76,12 +77,13 @@ const ProjectList = () => {
 
   return (
     <div className='container-fluid projectsec'>
+      <div className='projectcol'>
         <div className='row'>
             <div className='col-12 d-flex justify-content-center'>
                 <h1 className='worktitl pt-4'>My Projects</h1>
             </div>
         </div>
-      <div className='row'>
+      <div className='row px-5'>
         {projects.map((proj, index) => (
            
             <Project key={index} gitrepoproject={proj}></Project>
@@ -95,7 +97,7 @@ const ProjectList = () => {
             // </div>
         ))}
       </div>
-
+      </div>
     </div>
   );
 };

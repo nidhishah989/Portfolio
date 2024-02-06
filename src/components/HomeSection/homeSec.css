@@ -1,6 +1,7 @@
 #mainhome{
-    background-color:rgb(181, 236, 236,0.6);
- }
+    /* background-color:rgb(181, 236, 236,0.6); */
+    background-color:rgba(104, 222, 222, 0.6);
+}
  
  
  #connectls .list-group-item{

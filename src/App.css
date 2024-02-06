@@ -8,6 +8,6 @@
 } */
 
 .App{
-  background: rgba(255, 255, 255, 0.5) url(./style/white-background.gif) no-repeat center center fixed;
+  background: rgba(255, 255, 255, 0.8) url(./style/white-background.gif) no-repeat center center fixed;
   background-size: cover;
 }

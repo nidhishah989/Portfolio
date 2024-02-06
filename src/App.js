@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection/aboutSection';
 import SkillsSection from './components/SkillSection/skillsection';
 import WorkSection from './components/workSection/workSection';
 import ProjectList from './components/workSection/worksec';
+import Contact from './components/ContactSection/Contact';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <SkillsSection/>
         {/* <WorkSection /> */}
         <ProjectList></ProjectList>
+        <Contact></Contact>
         
       </div>
     </Router>
